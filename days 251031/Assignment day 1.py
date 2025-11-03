@@ -41,8 +41,8 @@ def update_employee():
     else:
         print("Employee not found..") 
 
-      def delete_employee():                                
-    id = int(input("Enter Employee Id to delete: "))
+    def delete_employee():                                
+     id = int(input("Enter Employee Id to delete: "))
     index = search_employee(id)
 
     if index != -1:
