@@ -1,16 +1,15 @@
-Employees = []
+Employees = []  
 
-def add_employee(id,name,domain,salary):
-    employee = {
-        "id":id,
-        "name":domain,
-        "salary":salary
-
-    }
+def add_employee(id, name, domain, salary):
+    employee = {                 
+        "id": id,
+        "name": name,
+        "domain": domain,
+        "salary": salary
+    }                            
     Employees.append(employee)
     print("Employee Added Successfully")
     print(Employees)
-
 
 def search_employee(id):
     for i, emp in enumerate(Employees):       
@@ -21,11 +20,9 @@ def search_employee(id):
     print(" Employee not found..")
     return -1
 
-
 def update_employee():
     id = int(input("Enter Employee Id to update: "))  
-    index = search_employee(id)
-
+    index = search_employee(id)                       
 
     if index != -1:                                    
         name = input("Enter Updated name: ")
@@ -39,10 +36,10 @@ def update_employee():
         print("Employee details updated successfully...")
         print(Employees[index])
     else:
-        print("Employee not found..") 
+        print("Employee not found..")              
 
-    def delete_employee():                                
-     id = int(input("Enter Employee Id to delete: "))
+def delete_employee():                                
+    id = int(input("Enter Employee Id to delete: "))
     index = search_employee(id)
 
     if index != -1:
@@ -50,16 +47,16 @@ def update_employee():
         print(f"Employee deleted successfully: {deleted['name']}")
         print(Employees)
     else:
-        print(" Employee not Found")   
+        print(" Employee not Found")                 
 
 #Menu Driven
-    while True:
-        print("****** Employee Management System ******")
-        print("1. Add Employee")
-        print("2. Search Employee")
-        print("3. Update Employee")
-        print("4. Delete Employee")
-        print("5. Exit")
+while True:
+    print("****** Employee Management System ******")
+    print("1. Add Employee")
+    print("2. Search Employee")
+    print("3. Update Employee")
+    print("4. Delete Employee")
+    print("5. Exit")
 
     choice = input("Enter your choice: ")              
 
