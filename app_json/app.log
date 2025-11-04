@@ -1,0 +1,7 @@
+2025-11-04 12:19:33,491 [INFO] Employee Not xist
+2025-11-04 12:19:40,853 [INFO] Employee Not xist
+2025-11-04 12:20:21,951 [INFO] Employee Not xist
+2025-11-04 12:20:21,952 [DEBUG] Employee [id = 101, name = hansika, job_title = scr, salary = 290000] added to list
+2025-11-04 12:20:21,954 [DEBUG] Employees written to the file
+2025-11-04 12:20:21,955 [INFO] Employee Added Successfully
+2025-11-04 12:20:27,480 [INFO] Employee Not xist
