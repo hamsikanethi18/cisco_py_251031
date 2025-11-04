@@ -11,20 +11,19 @@
     #5. Reads back the data from the file and displays it on the screen.
 
 
-sentence=input("enter the sentence:")
-words_list =sentence.split()
-upper_list=[]
-for word in words_list:
-    upper_word=word.upper()
-    upper_list.append(word.upper())
-words_tuple=tuple(upper_list)
-print(words_list,type(words_list))
-print(words_tuple,type(words_tuple))
+sentence=input(" Enter the sentence : ")
+req_list=sentence.split()
+new_list=[]
+for word in req_list:
+    new_word=word.upper()
+    new_list.append(new_word)
+req_tuple=tuple(new_list)   
+print(req_list,type(req_list))
+print(req_tuple,type(req_tuple))
 with open("sentence_data.txt","w") as output_file:
-    output_file.write(f'List:{words_list}\n')
-    output_file.write(f'tuple:{words_tuple}\n')
-
-with open("senetnce_data.txt","r") as input_file:
+    output_file.write(f"List:{req_list}\n")
+    output_file.write(f'Tuple:{req_tuple}\n')
+with open("sentence_data.txt","r") as input_file:
     file=input_file.read()
     print(file)
 
