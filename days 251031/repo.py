@@ -1,3 +1,7 @@
+import pickle
+import db_emp as db
+
+
 employees = [] #employee is object of attr (id, name, job_title, salary)
 
 def add_employee(employee):
