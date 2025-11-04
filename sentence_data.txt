@@ -1,2 +1,2 @@
-List:['all', 'the', 'best']
-Tuple:('ALL', 'THE', 'BEST')
+List:['cisco', 'is', 'a', 'product', 'based', 'company']
+Tuple:('CISCO', 'IS', 'A', 'PRODUCT', 'BASED', 'COMPANY')
